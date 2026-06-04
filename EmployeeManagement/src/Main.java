@@ -9,8 +9,10 @@ public class Main {
         team[1] = new Tester("Sarah", 3);
         team[2] = new Manager("Alice", 8);*/
 
+        // Print out the names of all employees in our array
         ArrayList<Employee> team = new ArrayList<>();
 
+        // Populate the array with our employee objects
         team.add(new Developer("Tom", 5));
         team.add(new Tester("Sarah", 3));
         team.add(new Manager("Alice", 8));
@@ -26,8 +28,10 @@ public class Main {
         team.add(new Developer("Mike", 4));
         team.add(new Tester("Mike", 4));
 
+
         System.out.println("=== EMPLOYEE MANAGEMENT SYSTEM ===\n");
 
+        // Display the Details of all employees in our array
         for (Employee emp : team) {
             emp.displayInfo();
             System.out.println("Role: " + emp.getClass().getSimpleName());

@@ -1,3 +1,4 @@
+// Parent class for all shapes, with a method to calculate the area of any shape
 public class Shape {
     public double calculateArea() {
         System.out.println("Unknown shape area.");
@@ -5,6 +6,7 @@ public class Shape {
     }
 }
 
+// Child classes for Circle
 class Circle extends Shape {
     private double radius;
 
@@ -12,12 +14,14 @@ class Circle extends Shape {
         this.radius = radius;
     }
 
+    // Override the calculateArea method to compute the area of a square
     @Override
     public double calculateArea() {
         return Math.PI * radius * radius;
     }
 }
 
+// Child classes for Square
 class Square extends Shape {
     private double side;
 
@@ -25,12 +29,14 @@ class Square extends Shape {
         this.side = side;
     }
 
+    // Override the calculateArea method to compute the area of a square
     @Override
     public double calculateArea() {
         return side * side;
     }
 }
 
+// Child classes for Rectangle
 class Rectangle extends Shape {
     private double width;
     private double height;
@@ -40,6 +46,7 @@ class Rectangle extends Shape {
         this.height = height;
     }
 
+    // Override the calculateArea method to compute the area of a square
     @Override
     public double calculateArea() {
         return width * height;

@@ -2,6 +2,7 @@ public class Student {
     private String name;
     private int grade;
 
+    // Constructor for Student class
     public Student(String name, int grade) {
         this.name = name;
         if (grade >= 0 && grade <= 100) {
@@ -12,6 +13,7 @@ public class Student {
         }
     }
 
+    // Getter methods for name and grade
     public String getName() {
         return name;
     }
@@ -20,10 +22,12 @@ public class Student {
         return grade;
     }
 
+    // Setter methods for name
     public void setName(String name) {
         this.name = name;
     }
 
+    // Setter methods for grade
     public void setGrade(int grade) {
         if (grade >= 0 && grade <= 100) {
             this.grade = grade;
@@ -32,8 +36,8 @@ public class Student {
         }
     }
 
+    // Method to display student information
     public void displayInfo() {
-
         System.out.println("Name: " + name);
         System.out.println("Grade: " + grade);
     }

@@ -2,37 +2,41 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+    // Greeting method with a string parameter
     static void greet (String name) {
         System.out.println("Welcome! " + name);
     }
 
+    // Addition method with two integer parameters
     static int add(int a, int b) {
         return a + b;
     }
 
+    // Dob method with an integer parameter
     static int dob(int age) {
         return 2026 - age;
     }
 
     public static void main(String[] args) {
 
-        //Variables with different data types
+        // Variables with different data types
         String name = "Aaron";
         int age  = 23;
         double salary = 30000.0;
         boolean employed = false;
 
-        //Using the greet method
+        // Using the greet method
         greet(name);
 
-        //Using the add method
+        // Using the add method
         int result = add(5, 10);
         System.out.println(result);
 
-
+        // Using the dob method
         int year = dob(age);
         System.out.println(year);
 
+        // Using the Person class
         System.out.println("\nPersonal Info:");
         Person p1 = new Person();
         p1.name = name;
@@ -44,7 +48,7 @@ public class Main {
         p2.age = 28;
         p2.introduce();
 
-
+        // Using the Car class
         Car c1 = new Car();
         System.out.println("\nCars:");
         c1.make = "bmw";
@@ -52,7 +56,7 @@ public class Main {
         c1.year = 2018;
         c1.displayInfo();
 
-
+        // Using the Book class
         Book b1 = new Book();
         System.out.println("\nBooks:");
         b1.title = "Red Rising";
@@ -60,7 +64,7 @@ public class Main {
         b1.pages = 416;
         b1.displayBook();
 
-
+        // Using the BankAccount class
         BankAccount account = new BankAccount();
         account.owner = name;
         System.out.println("\nBank Account:");
@@ -75,7 +79,7 @@ public class Main {
         account.withdraw(400);
         account.showBalance();
 
-
+        // Using the Student class
         Student student1 = new Student("Aaron", 85);
         System.out.println("\nStudent Grades:");
         student1.displayInfo();
@@ -84,7 +88,7 @@ public class Main {
         student1.displayInfo();
 
 
-        // Testing Vehicle
+        // Using the vehicle class
         System.out.println("\nVehicle:");
         CarVe myCar = new CarVe("Toyota");
         Motorcycle myBike = new Motorcycle("Harley-Davidson");
@@ -113,7 +117,7 @@ public class Main {
         System.out.println();
 
 
-        // Testing Shapes
+        // Using the shape class
         System.out.println("\nShapes:");
         Shape myCircle = new Circle(5.0);
         System.out.println("Circle Area: " + myCircle.calculateArea());
@@ -123,8 +127,5 @@ public class Main {
 
         Shape myRectangle = new Rectangle(4.0, 6.0);
         System.out.println("Rectangle Area: " + myRectangle.calculateArea());
-
-
-
     }
 }

@@ -1,5 +1,6 @@
 import java.util.Vector;
 
+// Parent Class for vehicles
 public class Vehicle {
     protected String brand;
 
@@ -17,6 +18,7 @@ public class Vehicle {
     }
 }
 
+// Child class for Cars
 class CarVe extends Vehicle {
     public CarVe(String brand) {
         super(brand);
@@ -26,6 +28,7 @@ class CarVe extends Vehicle {
     }
 }
 
+// Child class for Motorcycles
 class Motorcycle extends Vehicle {
     public Motorcycle(String brand) {
         super(brand);
@@ -35,6 +38,7 @@ class Motorcycle extends Vehicle {
     }
 }
 
+// Child class for Vans
 class Van extends Vehicle {
     public Van(String brand) {
         super(brand);
@@ -44,6 +48,7 @@ class Van extends Vehicle {
     }
 }
 
+// Child class for Lorry
 class Lorry extends Vehicle {
     public Lorry(String brand) {
         super(brand);
